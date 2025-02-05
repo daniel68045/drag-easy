@@ -1,0 +1,33 @@
+{
+  "name": "drag-easy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel68045/drag-easy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniel68045/drag-easy/issues"
+  },
+  "homepage": "https://github.com/daniel68045/drag-easy#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "rollup": "^4.34.3",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  }
+}
