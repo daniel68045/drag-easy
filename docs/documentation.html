@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DragEasy Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header>
+    <div class="header-links">
+      <a href="https://github.com/daniel68045/drag-easy" target="_blank"
+        >GitHub</a
+      >
+      <a href="https://www.npmjs.com/package/drag-easy" target="_blank">NPM</a>
+    </div>
+  </header>
+  <body>
+    <div id="draggable-cube">DragEasy Docs</div>
+    <div class="content">
+      <p>Official Documentation (↑ Draggable)</p>
+
+      <h2>Installation</h2>
+      <div class="code-block">
+        <div class="code-header">Terminal</div>
+        <pre><code>npm install drag-easy</code></pre>
+      </div>
+
+      <h2>Basic Usage</h2>
+      <p>Import and use DragEasy in your JavaScript project:</p>
+      <div class="code-block">
+        <div class="code-header">JavaScript (ES Module)</div>
+        <pre><code>import { makeDraggable } from "drag-easy";
+
+const box = document.getElementById("box");
+makeDraggable(box);</code></pre>
+      </div>
+
+      <h2>Using in HTML (Without a Bundler)</h2>
+      <p>
+        If you're not using a module bundler, include DragEasy directly in your
+        HTML:
+      </p>
+      <div class="code-block">
+        <div class="code-header">HTML</div>
+        <pre><code>&lt;script src="node_modules/drag-easy/dist/drag-easy.umd.js">&lt;/script>
+&lt;script>
+    const box = document.getElementById("box");
+    DragEasy.makeDraggable(box); 
+&lt;/script></code></pre>
+      </div>
+
+      <h2>Styling the Draggable Element</h2>
+      <p>Customize the draggable box with CSS:</p>
+      <div class="code-block">
+        <div class="code-header">CSS</div>
+        <pre><code>#box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    cursor: grab;
+}</code></pre>
+      </div>
+
+      <h2>Aditional</h2>
+
+      <h3>Restrict Dragging to One Axis</h3>
+      <p>Limit movement to horizontal (`"x"`) or vertical (`"y"`) only:</p>
+      <div class="code-block">
+        <div class="code-header">JavaScript</div>
+        <pre><code>makeDraggable(box, { axis: "x" }); // Only moves horizontally</code></pre>
+      </div>
+
+      <h3>Contain Dragging Inside a Parent</h3>
+      <p>Keep the draggable element inside a container:</p>
+      <div class="code-block">
+        <div class="code-header">JavaScript</div>
+        <pre><code>const container = document.getElementById("container");
+makeDraggable(box, { container: container });</code></pre>
+      </div>
+
+      <h3>Event Callbacks</h3>
+      <p>Run functions when dragging starts or ends:</p>
+      <div class="code-block">
+        <div class="code-header">JavaScript</div>
+        <pre><code>makeDraggable(box, {
+    onDragStart: () => console.log("Dragging started!"),
+    onDragEnd: () => console.log("Dragging stopped!"),
+});</code></pre>
+      </div>
+
+      <h2>Summary</h2>
+      <p>
+        With DragEasy, you can easily make elements draggable, restrict
+        movement, set boundaries, and handle events—all with minimal code.
+      </p>
+
+      <a href="index.html" class="btn">Back to Home</a>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
