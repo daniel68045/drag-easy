@@ -1,4 +1,4 @@
-## drag-easy
+## drag-easy-components
 
 A lightweight JavaScript library for creating draggable web components
 

@@ -1,9 +1,12 @@
 {
-  "name": "drag-easy",
-  "version": "1.0.0",
+  "name": "drag-easy-components",
+  "version": "1.0.1",
   "type": "module",
-  "description": "",
+  "description": "A lightweight JavaScript library for creating draggable web components",
   "main": "dist/drag-easy.js",
+  "files": [
+    "dist"
+  ],
   "directories": {
     "doc": "docs",
     "example": "examples",
@@ -17,7 +20,11 @@
     "type": "git",
     "url": "git+https://github.com/daniel68045/drag-easy.git"
   },
-  "keywords": [],
+  "keywords": [
+    "drag-and-drop",
+    "web-components",
+    "library"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
