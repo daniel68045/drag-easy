@@ -1,17 +1,17 @@
-import typescript from "@rollup/plugin-typescript";
+const typescript = require("@rollup/plugin-typescript");
 
-export default {
+module.exports = {
   input: "src/index.ts",
   output: [
     {
       file: "dist/drag-easy.js",
-      format: "umd",
-      name: "DragEasy",
+      format: "esm",
       sourcemap: true,
     },
     {
-      file: "dist/drag-easy.esm.js",
-      format: "esm",
+      file: "dist/drag-easy.umd.js",
+      format: "umd",
+      name: "DragEasy",
       sourcemap: true,
     },
   ],
