@@ -1,6 +1,6 @@
 ## drag-easy-components
 
-A lightweight JavaScript library for creating draggable web components
+A lightweight JavaScript for creating draggable web components written in TypeScript (Rollup.js bundler)
 
 ## Installation
 
