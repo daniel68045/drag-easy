@@ -1,6 +1,6 @@
 {
   "name": "drag-easy-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "A lightweight JavaScript library for creating draggable web components",
   "main": "dist/drag-easy.js",
