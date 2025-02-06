@@ -7,7 +7,7 @@ A lightweight JavaScript library for creating draggable web components written i
 Using NPM:
 
 ```bash
-npm install drag-easy
+npm install drag-easy-components
 ```
 
 Using a `<script>` tag (UMD version):
@@ -19,7 +19,7 @@ Using a `<script>` tag (UMD version):
 Basic Usage
 
 ```JavaScript
-import { makeDraggable } from "drag-easy";
+import { makeDraggable } from "drag-easy-components";
 const box = document.getElementById("box");
 makeDraggable(box);
 ```
