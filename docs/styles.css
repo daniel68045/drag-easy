@@ -86,7 +86,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0);
+  background: black(0, 0, 0, 0);
   padding: 10px 20px;
   display: flex;
   justify-content: flex-end;
@@ -103,4 +103,12 @@ header {
 
 .header-links a:hover {
   color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    z-index: 10000;
+    background: black;
+  }
 }
