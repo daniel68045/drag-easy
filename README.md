@@ -36,4 +36,4 @@ HTML (Without a Bundler)
 
 ## Documentation
 
-For more details, visit the official [documentation](https://drageasycomponents.com).
+For more details, visit the official [documentation](https://drageasycomponents.com)
